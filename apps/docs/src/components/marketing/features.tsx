@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Container from "../global/container";
 import Icons from "../global/icons";
 import Images from "../global/images";
@@ -87,7 +88,14 @@ const Features = () => {
                                         <div className="w-full h-48 relative">
                                             <Images.rings className="w-full h-full absolute inset-0" />
                                             <Images.rings className="w-56 h-56 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                                            <Icons.icon className="w-24 h-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80" />
+                                            {/* <Icons.icon  /> */}
+                                            <Image
+                                              src={"/icons/cat.png"}
+                                              alt="catto"
+                                              height={50}
+                                              width={50}
+                                              className="w-24 h-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80"
+                                            />
                                             <Images.circlePallete className="w-full h-full opacity-30" />
                                         </div>
                                         <div className="w-28 h-28 rounded-full bg-primary/10 blur-3xl -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
